@@ -64,7 +64,12 @@ parse(code_object)
 ## TODO
 
 - Implement a full fledged BinaryView to support disassembling of pyc files. Currently, this is difficult to do due to limitations in the Binary Ninja API (See issues [#133][1], [#551][2], [#728][3])
-- IL of bytecode instrictions.
+- IL of bytecode instructions
+- Inline `co_consts`, `co_names` within the disassembly rather than referring them by indices
+
+[1]: https://github.com/Vector35/binaryninja-api/issues/133
+[2]: https://github.com/Vector35/binaryninja-api/issues/551
+[3]: https://github.com/Vector35/binaryninja-api/issues/728
 
 ## Screenshot
 
@@ -77,6 +82,7 @@ parse(code_object)
 
 ![](images/2.png)
 
-[1]: https://github.com/Vector35/binaryninja-api/issues/133
-[2]: https://github.com/Vector35/binaryninja-api/issues/551
-[3]: https://github.com/Vector35/binaryninja-api/issues/728
+
+## License
+
+The MIT License
